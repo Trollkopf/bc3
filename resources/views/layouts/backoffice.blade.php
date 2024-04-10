@@ -26,8 +26,9 @@
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
                 <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="{{ asset('img/logo.png') }}" alt="bc3 logo" />
+                        <img src="{{ asset('img/logo.png') }}" alt="bc3 logo" width="179.55"  />
                     </a>
+                    <hr>
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
                         id="menu">
                         <li class="nav-item">
@@ -38,7 +39,7 @@
 
                         <li>
                             <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">
+                                <i class="fs-4 bi-body-text"></i> <span class="ms-1 d-none d-sm-inline">
                                     Contenido</span> </a>
                             <ul class="collapse show nav flex-column ms-3" id="submenu1" data-bs-parent="#menu">
 
@@ -47,8 +48,12 @@
                                             class="d-none d-sm-inline text-capitalize "> Traducciones</span></a>
                                 </li>
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <i class="fs-4 bi-book"></i><span
+                                    <a href="{{ route('pages.index') }}" class="nav-link px-0"> <i class="fs-4 bi-book"></i><span
                                             class="d-none d-sm-inline text-capitalize "> P&aacute;ginas</span></a>
+                                </li>
+                                <li class="w-100">
+                                    <a href="{{ route('blog.index') }}" class="nav-link px-0"> <i class="fs-4 bi-substack"></i><span
+                                            class="d-none d-sm-inline text-capitalize "> Blog</span></a>
                                 </li>
                                 <li class="w-100">
                                     <a href="#" class="nav-link px-0"><i class="fs-4 bi-envelope-at"></i> <span

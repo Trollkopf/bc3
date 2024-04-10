@@ -25,7 +25,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{-- {{ config('app.name', 'Laravel') }} --}}
-                    <img src="{{ asset('img/logo.png') }}" alt="bc3 logo" />
+                    <img src="{{ asset('img/logo.png') }}" alt="bc3 logo" width="179.55" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -55,8 +55,8 @@
                             </a>
 
                             <ul class="dropdown-menu text-center " aria-labelledby="dropdownKitchen">
-                                <li><a class="dropdown-item text-uppercase " href="#">cocinas cl&aacute;sicas</a></li>
-                                <li><a class="dropdown-item text-uppercase " href="#">cocinas modernas</a></li>
+                                <li><a class="dropdown-item text-uppercase " href="{{ route('classic_kitchen.index') }}">cocinas cl&aacute;sicas</a></li>
+                                <li><a class="dropdown-item text-uppercase " href="{{ route('modern_kitchen.index') }}">cocinas modernas</a></li>
                             </ul>
                         </div>
                         <li>

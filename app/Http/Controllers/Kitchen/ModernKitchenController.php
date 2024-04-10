@@ -1,18 +1,19 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Kitchen;
 
-use App\Models\Kitchen;
+use App\Http\Controllers\Controller;
+use App\Models\ModernKitchen;
 use Illuminate\Http\Request;
 
-class KitchenController extends Controller
+class ModernKitchenController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view("web.kitchens.modern");
     }
 
     /**
@@ -34,7 +35,7 @@ class KitchenController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Kitchen $kitchen)
+    public function show(ModernKitchen $modernKitchen)
     {
         //
     }
@@ -42,7 +43,7 @@ class KitchenController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Kitchen $kitchen)
+    public function edit(ModernKitchen $modernKitchen)
     {
         //
     }
@@ -50,7 +51,7 @@ class KitchenController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Kitchen $kitchen)
+    public function update(Request $request, ModernKitchen $modernKitchen)
     {
         //
     }
@@ -58,7 +59,7 @@ class KitchenController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Kitchen $kitchen)
+    public function destroy(ModernKitchen $modernKitchen)
     {
         //
     }
